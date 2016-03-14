@@ -27,7 +27,7 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']);
   });
 
-  it('makes every possible pairing of students', function(){
+  xit('makes every possible pairing of students', function(){
     var result = everyPossiblePair(['Jon', 'Tyrion', 'Daenerys']);
     // sorted alphabetically
     expect(result).toEqual([[ 'Daenerys', 'Jon' ], [ 'Daenerys', 'Tyrion' ], [ 'Jon', 'Tyrion' ]] );
@@ -43,7 +43,7 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual([1, 2, 3, 4, 5]);
   });
 
-  it('sorts an array by the last letter of each word', function(){
+  xit('sorts an array by the last letter of each word', function(){
     var result = sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen']);
     expect(result).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
   });
@@ -104,7 +104,7 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual([1, 3, 5, 4, 1, 2]);
   });
 
-  it('converts an array to an object', function(){
+  xit('converts an array to an object', function(){
     var result = convertArrayToObject(['Jaime', 'Lannister', 'Robb', 'Stark', 'Joffrey', 'Baratheon']);
     expect(result).toEqual({'Jaime': 'Lannister', 'Robb': 'Stark', 'Joffrey': 'Baratheon'});
   });
@@ -150,14 +150,14 @@ describe('javascriptRefresher', function(){
     expect(result2).toEqual('ssh.makersacademy');
   });
 
-  it('titleizes a string', function(){
+  xit('titleizes a string', function(){
     var result = titleize('the lion the witch and the wardrobe');
     expect(result).toEqual('The Lion the Witch and the Wardrobe');
     var result2 = titleize('the lion the witch. and the wardrobe');
     expect(result2).toEqual('The Lion the Witch. And the Wardrobe');
   });
 
-  it('checks a string for special characters', function(){
+  xit('checks a string for special characters', function(){
     var resultOne = checkForSpecialCharacters('ABCdef123');
     var resultTwo = checkForSpecialCharacters('ABC@dsklfj!');
 
